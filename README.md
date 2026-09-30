@@ -9,11 +9,10 @@ low-emission electric carts and student-worker crews.
 
 ## Group Members
 
-<!-- TODO: replace with each member's full name before submitting Phase 1 -->
-1. Yonatan Alemayehu
-2. (full name)
-3. (full name)
-4. (full name)
+1. Misgana Kebede
+2. Clement Mbuyi
+3. Yonatan Alemayehu
+4. Emran Abatemam
 
 ## The Three Portals
 
@@ -43,12 +42,12 @@ mnsu-campuseco/
 
 Each member owns their own files so we do not edit the same file at once.
 
-| Member | Files |
-| --- | --- |
-| (name) | `pages/operator.html`, `css/operator.css` |
-| (name) | `pages/courier.html`, `css/courier.css` |
-| (name) | `pages/enduser.html`, `css/enduser.css` |
-| (name) | `index.html`, `css/main.css`, `README.md` |
+| Member | GitHub | Files |
+| --- | --- | --- |
+| Misgana Kebede | @Misgexx | `pages/operator.html`, `css/operator.css` |
+| Clement Mbuyi | @Clementmbuyi | `pages/courier.html`, `css/courier.css` |
+| Emran Abatemam | @emran0973 | `pages/enduser.html`, `css/enduser.css` |
+| Yonatan Alemayehu | @Yoni062004 | `index.html`, `css/main.css`, `README.md` |
 
 ## Phases
 
