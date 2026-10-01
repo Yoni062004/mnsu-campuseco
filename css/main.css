@@ -1,4 +1,211 @@
-/* main.css — shared theme for MNSU-CampusEco
-   Owner: Member 4. Everyone else styles their own portal on top of this.
-   TODO Phase 1 (Task 1.2): campus color scheme, typography hierarchy,
-   header and nav layout, button styles, spacing, shared card/panel styles. */
+/* ==========================================================
+   main.css — shared theme for MNSU-CampusEco
+   Owner: Member 4. Portal stylesheets build on top of this.
+
+   COLOR SCHEME (use these exact values in your portal CSS)
+     Main purple ........ #49176D  (header, buttons, headings)
+     Dark purple ........ #33104D  (hover states)
+     Gold accent ........ #F2B700  (small highlights only)
+     Page background .... #F7F5FA
+     Card background .... #FFFFFF
+     Body text .......... #222222
+     Muted text ......... #666666
+     Borders ............ #DDDDDD
+
+   SHARED CLASS NAMES (reuse these, don't rename them)
+     .container   centered page wrapper
+     .card        content box
+     .panel       content box for a section or dashboard area
+     .card-row    puts cards side by side, wrapping to a new line
+     .form-group  label stacked above its input
+   Shared elements also styled here: button, input, select,
+   table, th, td.
+   ========================================================== */
+
+/* Base: font, colors, and spacing for the whole site */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F7F5FA;
+  color: #222222;
+  margin: 0;
+}
+
+/* Header: purple bar across the top, items in one row */
+header {
+  background-color: #49176D;
+  color: #FFFFFF;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav list: links side by side with no bullets */
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav links: white text with no underline */
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Nav links on hover: gold accent with an underline */
+nav a:hover {
+  color: #F2B700;
+  text-decoration: underline;
+}
+
+/* Headings: size and spacing for each level */
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 22px;
+  color: #49176D;
+  margin: 24px 0 12px 0;
+}
+
+h3 {
+  font-size: 18px;
+  color: #49176D;
+  margin: 16px 0 8px 0;
+}
+
+/* Paragraphs: extra space between lines for easier reading */
+p {
+  line-height: 1.6;
+}
+
+/* Links in page content: purple, darker on hover */
+a {
+  color: #49176D;
+}
+
+a:hover {
+  color: #33104D;
+  text-decoration: underline;
+}
+
+/* Container: centers page content and limits its width */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 32px;
+}
+
+/* Card and panel: white boxes that group related content */
+.card,
+.panel {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Panel only: thin gold accent line along the top edge */
+.panel {
+  border-top: 4px solid #F2B700;
+}
+
+/* Card row: lines cards up side by side and wraps them when out of room */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Cards inside a card row: equal widths, spacing comes from the gap */
+.card-row .card {
+  width: 330px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+/* Form group: stacks a label on top of its input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+/* Inputs and dropdowns: full width with padding and rounded corners */
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 2px solid #DDDDDD;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Inputs and dropdowns in focus: purple border shows which field is active */
+input:focus,
+select:focus {
+  border: 2px solid #49176D;
+}
+
+/* Buttons: purple with white text */
+button {
+  background-color: #49176D;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Buttons on hover: darker purple */
+button:hover {
+  background-color: #33104D;
+}
+
+/* Tables: full-width tracking logs on a white background */
+table {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  margin-bottom: 20px;
+}
+
+/* Table header row: purple background with white text */
+th {
+  background-color: #49176D;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 10px 12px;
+}
+
+/* Table cells: padding and a light border */
+td {
+  padding: 10px 12px;
+  border: 1px solid #DDDDDD;
+}
+
+/* Footer: centered, muted text at the bottom of every page */
+footer {
+  text-align: center;
+  color: #666666;
+  padding: 24px 32px;
+  margin-top: 40px;
+  border-top: 1px solid #DDDDDD;
+}
